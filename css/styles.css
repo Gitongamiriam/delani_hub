@@ -20,6 +20,14 @@ h2{
 text-align:center;
 padding-top:4%;
 }
+h3{
+    text-align:center;
+}
 p{
     text-align:center;
+}
+#img2{
+    background-image:url("../assets/backgrounds/s_image.jpg");
+    background-size:100%;
+    padding-top:12%;
 }
