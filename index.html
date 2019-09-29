@@ -4,6 +4,7 @@
         <title>Delani studio</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/jquery-3.4.1.js"></script>
         <script src="js/scripts.js"></script> 
     </head>
     <body>
@@ -14,11 +15,11 @@
                         <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
                     </div>
                     <div class="img">
-                            <img src="../assets/mouse_click.png" alt="">
+                            <a href="#aboutus"><img src="../assets/mouse_click.png" alt=""></a>
                     </div>
-                </div>
-                <div class="Aboutus">
-                    <h2>ABOUT US</h2>
+                </div> 
+                <div id="aboutus">
+                    <h2 id="aboutus">ABOUT US</h2>
                     <P>When you work with us you are part of a team of committed collaborators.All aspect of our
                         software development process are intergrated,interactive and agle.<br>
                         Our approach unifies design,development and product management to create exceptional
@@ -34,59 +35,99 @@
                         based on your requiremnts we can provide a complete offering or just the pieces you need.
                     </p>
                 </div>
-                <h2>WHAT WE DO</h2>
-                <div id ="img3">
-                    <div class="row">
-                        <div class="col-sm-4">
-                                <div id ="img3">
-                                        <img src="assets/services_icons/design_icon.png">
-                                        <h3>DESIGNS</h3>
-                                        <p>Our designs practice offers a full range services<br>including brand strategy,
-                                            interaction and visual design and user experience testing.<br>Throught your project ,our designers
-                                            create and <br>implement visual design and workflows,solicit users<br>
-                                            feedback and work with you to make sure what gets builtis what needed.
-                                        </p>
-                                        </div>
-                        </div>
-                            <div class ="col-sm-4">
-                                    <div id ="dev">
-                                            <img src="assets/services_icons/dev_icon.png">
-                                            <h3>DEVELOPMENT</h3>
-                                            <p>All engineers are fluent in the latest enterprise,mobile<br>
-                                            and web development technologies.
-                                            <br>They collaborate with your team to write 
-                                            ,and improve <br>code on a basis,using proven practices such as <br>
-                                            test driven development and pair programming</p>
+                <h2>WHAT WE DO</h>
+                        <div class="row">
+                                <div class="col-sm-4">
+                                        <div id ="img3">
+                                            <div id="show1">
+                                                <img src="assets/services_icons/design_icon.png">
+                                                <h3>DESIGN</h3>
                                             </div>
+                                            <div id="hide1">
+                                                <h3>DESIGN</h3>
+                                                <p>Our designs practice offers a full range services<br>including brand strategy,
+                                                    interaction and visual design and user experience testing.<br>Throught your project ,our designers
+                                                    create and <br>implement visual design and workflows,solicit users<br>
+                                                    feedback and work with you to make sure what gets builtis what needed.
+                                                </p>
                                             </div>
-                                            <div class="col-sm-4">
-                                                    <div id ="product">
-                                                    <img src="assets/services_icons/product_icon.png">
-                                                    <H3>PRODUCTS</H3>
-                                                    <p>Planning and development is iterative .Because we are <br>constantly coding
-                                                        and testing,the productswe build are <br>aleays ready to go live.<br>
-                                                        This ireactive proccess allows for changes as business <br>
-                                                        requirements evolve.
-                                                    </p>
-                                                    </div>
-                                                    </div>
-                    </div>
-                    <div id="portfolio">
-                    <h2>PORTFOLIO</h2>
+                                </div> 
+                                </div>       
+                                           <div class="col-sm-4">
+                                                <div id ="img4">
+                                                        <div id="show2">
+                                                                <img src="assets/services_icons/dev_icon.png">
+                                                                <h3>DEVELOPMENT</h3>
+                
+                                                        </div>
+                                                        <div id="hide2">
+                                                                <h3>DEVELOPMENT</h3>
+                                                                <p>All engineers are fluent in the latest enterprise,mobile<br>
+                                                                and web development technologies.
+                                                                <br>They collaborate with your team to write 
+                                                                ,and improve <br>code on a basis,using proven practices such as <br>
+                                                                test driven development and pair programming</p>
+                                                        </div>
+                                                            </div>
+                                           </div>         
+                                           <div id ="col-um-4">
+                                                <div id ="img5">
+                                                        <div id="show3">
+                                                            <img src="assets/services_icons/product_icon.png">
+                                                            <H3>PRODUCTS</H3>
+                                                        </div>
+                                                        <div id="hide3">
+                                                                <h3>PRODUCTS</h3>
+                                                                <p>Planning and development is iterative .Because we are <br>constantly coding
+                                                                 and testing,the productswe build are <br>aleays ready to go live.<br>
+                                                                 This ireactive proccess allows for changes as business <br>
+                                                                 requirements evolve.
+                                                             </p>
+                                                        </div>
 
-                    <img src="assets/portfolio/work4.jpg">
-                    <img src="assets/portfolio/work3.jpg">
-                    <img src="assets/portfolio/work2.jpg">
-                    <img src="assets/portfolio/work1.jpg">
-                    <img src="assets/portfolio/work5.jpg">
-                    <img src="assets/portfolio/work6.jpg">
-                    <img src="assets/portfolio/work7.jpg">
-                    <img src="assets/portfolio/work8.jpg">
-                </div>
-                <div id="contactus">
+                                                    </div>
+                                           </div>
+
+
+                        </div>
+
+                    <div class="container">
+                        <div class="portfolio">
+                            <h3>PORTFOLIO</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/portfolio/work4.jpg"  width="250px">
+                            </div>
+                            <div class="col-sm-3">
+                                    <img src="assets/portfolio/work3.jpg"   width="250px">
+                            </div>
+                            <div class="col-sm-3">
+                                    <img src="assets/portfolio/work2.jpg"   width="250px">
+                            </div>
+                            <div class="col-sm-3">
+                                    <img src="assets/portfolio/work1.jpg"   width="250px">
+                            </div>
+                        </div><br><br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/portfolio/work5.jpg"   width="250px">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="assets/portfolio/work6.jpg"   width="250px">
+                             </div>
+                            <div class="col-sm-3">
+                                <img src="assets/portfolio/work7.jpg"   width="250px">
+                            </div>
+                            <div class="col-sm-3">
+                                 <img src="assets/portfolio/work8.jpg"   width="250px">
+                             </div>
+                        </div>
+                    </div>
+                   <div id="contact">
                     <h6>CONTACT US</h6>
                     <form>
-                        <input class="name" type="text" placeholder="Name" name="Name" required>
+                        <input class="name" type="text" placeholder="Name" required>
                         <input  class="email" type="text" placeholder="Email" name="Email" required> <br>
                         <input  class ="message" type="text" placeholder=" Your Message here" name="Your Message here" required>
                     </form>
