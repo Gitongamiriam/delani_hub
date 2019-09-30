@@ -62,3 +62,6 @@ h6{
 .mc-field-group>input{
     background:transparent;
 }
+#mce-LNAME{
+    height: 200px;
+}
