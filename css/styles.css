@@ -1,3 +1,6 @@
+*{
+    overflow-x: hidden;
+}
 .home{
     background-image:url("../assets/backgrounds/h_img.jpg");
     background-size:cover;
@@ -65,3 +68,36 @@ h6{
 #mce-LNAME{
     height: 200px;
 }
+.piti1,.piti2,  .piti3, .piti4, .piti5, .piti6, .piti7, .piti8 {
+    margin: 10px; 
+    cursor: pointer;  
+    float:left;
+    list-style:none;
+    overflow:hidden; 
+    background: white;
+   }
+   div.wrapper{
+     width:250px;
+     height:250px;
+     overflow:hidden;
+     position:relative;
+   }
+   div.caption {
+     font-family:arial;
+     font-weight:bold;
+     color: rgb(12, 1, 1);  
+     font-size:25px;
+     position:relative;
+     text-align:center;
+     padding:49px 15px 15px 15px;
+     min-height:125px;
+     line-height:30px;  
+   }
+   
+   
+   
+   
+
+
+
+

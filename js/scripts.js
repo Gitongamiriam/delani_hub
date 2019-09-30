@@ -11,6 +11,36 @@ $(document).ready(function() {
         $("#show3").toggle();
         $("#hide3").toggle();
     });
+
+    $('#firstProject').hover(function(){
+        $('#first').show();
+    });
+
+    var coffee = $(".piti1 img, .piti2 img, .piti3 img, .piti4 img, .piti5 img, .piti6 img, .piti7 img, .piti8 img");
+    for (var i = 0; i < coffee.length; i++){
+        if (coffee[i].title && coffee[i].title.length > 0){
+            var imgTitle = coffee[i].title;
+            $(coffee[i]).wrap('<div class="wrapper wrapper'+i+'" />').
+            after('<div class=\'caption\'>' + imgTitle + '</div>').
+            removeAttr('title');
+        }
+    }
+  $('.wrapper0, .wrapper1, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6, .wrapper7').hover(
+    function(){
+      $(this).find('img').animate({opacity: ".4"}, 300);
+      $(this).find('.caption').animate({top:"-247px"}, 300);
+    },
+    function(){
+      $(this).find('img').animate({opacity: "1.0"}, 300);
+      $(this).find('.caption').animate({top:"-370px"}, 100);
+    }
+  );
+Collapse
+
+
+
+
+  
 });
 
 function feedback(form2) {
