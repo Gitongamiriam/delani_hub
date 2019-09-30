@@ -12,3 +12,12 @@ $(document).ready(function() {
         $("#hide3").toggle();
     });
 });
+
+function feedback(form2) {
+    var name = document.form["form2"]["name"].value;
+    var email = document.form["form2"]["email"].value;
+    var message = document.form["form2"]["message"].value;
+        alert("Hello! " + name + "," + " We have received your message. Thank you for reaching out to us. ");
+          };
+
+
